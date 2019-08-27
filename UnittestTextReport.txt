@@ -1,0 +1,18 @@
+test_Add1 (__main__.Test) ... ok
+test_Add2 (__main__.Test) ... FAIL
+test_Add3 (__main__.Test) ... skipped '跳过tes_Add3'
+test_Add4 (__main__.Test) ... skipped '根据flag值为1判读是否执行'
+test_Add5 (__main__.Test) ... ok
+
+======================================================================
+FAIL: test_Add2 (__main__.Test)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:/test/unnitest/test_01.py", line 39, in test_Add2
+    self.assertEqual(3,self.add(1,4))
+AssertionError: 3 != 5
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.080s
+
+FAILED (failures=1, skipped=2)
