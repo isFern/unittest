@@ -1,7 +1,11 @@
 import requests
 import unittest
-
 from mock import patch
+'''实现功能：mock的基本应用，主要了解
+@patch.object(SomeClass, 'class_method')
+... def test(mock_method):
+...     SomeClass.class_method(3)
+...     mock_method.assert_called_with(3)'''
 
 
 class PayApi():
@@ -36,7 +40,7 @@ class TestPayApi(unittest.TestCase):
     def tearDown(self):
         pass
 
-    # @mock.patch("test_03.PayApi")
+    #
     @patch.object(PayApi,'auth')
     def test_success(self,mock_auth):
         mock_auth.return_value =  {'status_code':'200'}

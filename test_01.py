@@ -2,6 +2,7 @@ import unittest
 import xmlrunner
 import HTMLTestRunner
 import time
+'''实现功能：不同方式添加test_case,且运行生成不同样式的测试报告；'''
 
 
 class Test(unittest.TestCase):
