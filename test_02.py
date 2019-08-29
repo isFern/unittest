@@ -16,7 +16,8 @@ class TestMock(unittest.TestCase):
         pass
 
     def test_add(self):
-        self.test.add = mock.Mock(return_value=3)
+        # self.test.add = mock.Mock(return_value=3)
+        self.test.add = mock.Mock(return_value=3, side_effect=self.test.add)
         self.assertEqual(self.test.add(4,2),3)
 
 

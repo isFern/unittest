@@ -4,3 +4,17 @@ test_add (__main__.TestMock) ... ok
 Ran 1 test in 0.000s
 
 OK
+test_add (__main__.TestMock) ... FAIL
+
+======================================================================
+FAIL: test_add (__main__.TestMock)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:/test/unnitest/test_02.py", line 21, in test_add
+    self.assertEqual(self.test.add(4,2),3)
+AssertionError: 6 != 3
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (failures=1)
