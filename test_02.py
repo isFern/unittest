@@ -1,6 +1,6 @@
 import mock
 import unittest
-'''实现功能：mock的基本应用，主要了解return_value和side_effect的用法；'''
+'''实现功能：mock的基本应用，主要了解return_value和side_effect的用法。'''
 
 
 class Test(unittest.TestCase):

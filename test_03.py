@@ -1,7 +1,7 @@
 import requests
 import unittest
 from mock import patch
-'''实现功能：mock的基本应用，主要了解
+'''实现功能：主要了解@patch.object(SomeClass, 'class_method')
 @patch.object(SomeClass, 'class_method')
 ... def test(mock_method):
 ...     SomeClass.class_method(3)
