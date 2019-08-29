@@ -22,9 +22,9 @@ class TestMock(unittest.TestCase):
 
 if __name__ == "__main__":
     test_suite = unittest.TestSuite()
-    test_suite.addTests(unittest.TestLoader().loadTestsFromTestCase(Test))
-    with open('TestReportMock.txt', 'a') as f:
-        runner = unittest.TextTestRunner(stream=f, verbosity=2)
+    test_suite.addTests(unittest.TestLoader().loadTestsFromTestCase(TestMock))
+    with open("TestReportMock.txt", "a") as f:
+        runner = unittest.TextTestRunner(stream=f, verbosity=3)
         runner.run(test_suite)
     # unittest.main(verbosity=2)
 
